@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Zefir-cloud</title>
 </head>
 <body>
     <header class="page-header">
         <nav class="main-nav container">
-            <a class="logo" href="">Zefir Cloud</a>
+            <a class="logo" href="#top">Zefir Cloud</a>
             <ul class="main-nav__list">
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="">Продукция</a>
+                    <a class="main-nav__link" href="#product">Продукция</a>
                 </li>
                 <!-- <li class="main-nav__item">
                     <a class="main-nav__link" href="">Кондитер</a>
                 </li> -->
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="">Цены</a>
+                    <a class="main-nav__link" href="#price">Цены</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="">Преимушества</a>
+                    <a class="main-nav__link" href="#features">Преимушества</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="">Доставка</a>
+                    <a class="main-nav__link" href="#delivery">Доставка</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="">Отзывы</a>
+                    <a class="main-nav__link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="">Контакты</a>
+                    <a class="main-nav__link" href="#contacts">Контакты</a>
                 </li>
             </ul>
             <a class="main-nav__phone" href="tel:+79867479908">+7 986 747 99 08</a>
@@ -50,8 +51,9 @@
             </div>            
         </section>
         <section class="product container section-padding">
+            <span id="product" class="section-anchor"></span> 
             <h2 class="product__title section-title">Наша продукция</h2>
-            <ul class="product__list">
+            <ul class="product__list row">
                 <li class="product__item">
                     <div class="product-image-wrapper">
                         <img class="product__image" src="img/content-img/product/zefir.jpg" alt="Зефир ручной работы" width="310" height="250">
@@ -87,73 +89,87 @@
             </ul> -->
         </section>
         <section class="master section-padding">
-            <div class="master__content container">
-                <div class="master__description">
-                    <h2 class="master__title section-title">Кондитер</h2>
-                    <p class="master__text">
-                        Привет, меня зовут Даша и я зефирная фея !                        
-                    </p>  
-                    <p class="master__text">Немного о себя, я такая вот такая, умею делать крутые и вкусные штуки. Очень люблю этим заниматься, прям кайфую ! А ещё я могу такое делать, вы просто будете в восторге, именно поэтому у меня так много заказов, я умею удивлять !
-                        
-                    </p>    
-                    <p class="master__text">
-                        Вообщем, я рождена для этого, а вы рождены , что бы вкусить мои прелестные сладости :)
-                    </p>                
-                </div> 
-                <div class="master-photo-wrapper">
-                    <img class="master__photo" src="img/content-img/master/master__photo.jpg" alt="" width="300">  
-                </div>                
-            </div>             
+            <div class="container">
+                <div class="master__content row">
+                    <div class="master__description">
+                        <h2 class="master__title section-title">Кондитер</h2>
+                        <p class="master__text">
+                            Привет, меня зовут Даша и я зефирная фея !
+                        </p>
+                        <p class="master__text">Немного о себя, я такая вот такая, умею делать крутые и вкусные штуки.
+                            Очень люблю этим заниматься, прям кайфую ! А ещё я могу такое делать, вы просто будете в
+                            восторге, именно поэтому у меня так много заказов, я умею удивлять !
+
+                        </p>
+                        <p class="master__text">
+                            Вообщем, я рождена для этого, а вы рождены , что бы вкусить мои прелестные сладости :)
+                        </p>
+                    </div>
+                    <div class="master-photo-wrapper">
+                        <img class="master__photo" src="img/content-img/master/master__photo.jpg" alt="" width="350">
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section class="price">
+            <span id="price" class="section-anchor"></span> 
             <h2 class="price__title section-title">Цены</h2>
         </section>
         <section class="features">
-            <div class="features__content container">
-                <div class="features__description">
-                    <h2 class="features__title section-title">Преимушества</h2>
-                    <p class="features__text">
-                        Производство кондитерских изделий - это удивительно интересный и творческйи процесс.                      
-                    </p>
-                    <p class="features__text">                        
-                        Да, несомненно, творческий, ведь мы изготавливаем изделия, которым суждено нести удовольствие людям. 
-                    </p>
-                     
-                    <p class="features__text">                        
-                        Это и было положено в основу самой идеи создания кондитерской, этим мы руководствуемся в своей
-                        политике.
-                    </p>
+            <span id="features" class="section-anchor"></span> 
+            <div class="container">
+                <div class="features__content">
+                    <div class="features__description">
+                        <h2 class="features__title section-title">Преимушества</h2>
+                        <p class="features__text">
+                            Производство кондитерских изделий - это интересный и творческйи процесс.
+                        </p>
+                        <p class="features__text">
+                            Да, несомненно, творческий, ведь мы изготавливаем изделия, которым суждено нести
+                            удовольствие людям.
+                        </p>
+
+                        <p class="features__text">
+                            Это и было положено в основу самой идеи создания кондитерской, этим мы руководствуемся в
+                            своей
+                            политике.
+                        </p>
+                    </div>
+                    <div class="features-list-wrapper">
+                        <ul class="features__list">
+                            <li class="features__item">
+                                <h3>Высокое качество</h3>
+                                <p>При производстве наших десертов исользуются только качественные ингредиенты.</p>
+                            </li>
+                            <li class="features__item">
+                                <h3>Доступные цены</h3>
+                                <p>Мы придерживаемся политики оптимального соотношения качества с доступной ценой.</p>
+                            </li>
+                            <li class="features__item">
+                                <h3>Забота о покупателе</h3>
+                                <p>Для нас очень важно, чтобы конечный потребитель получил удовольствие от предлагаемых нами
+                                    товаров.</p>
+                            </li>
+                            <li class="features__item">
+                                <h3>Натуральные продукты</h3>
+                                <p>Заботясь о здоровье наших потребителей, мы никогда не используем химических добавок.</p>
+                            </li>
+                            <li class="features__item">
+                                <h3>Гибкие продажи</h3>
+                                <p>У нас можно приобрести кондитерские изделия оптом - мелким и крупным.</p>
+                            </li>
+                            <li class="features__item">
+                                <h3>Лучшие кондитеры</h3>
+                                <p>Для осуществления ваших пожеланий мы привлекаем самых искусных мастеров.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="features__list">
-                    <li class="features__item">
-                        <h3>Высокое качество</h3>
-                        <p>При производстве наших десертов исользуются только качественные ингредиенты.</p>
-                    </li>
-                    <li class="features__item">
-                        <h3>Доступные цены</h3>
-                        <p>Мы придерживаемся политики оптимального соотношения качества с доступной ценой.</p>
-                    </li>
-                    <li class="features__item">
-                        <h3>Забота о покупателе</h3>
-                        <p>Для нас очень важно, чтобы конечный потребитель получил удовольствие от предлагаемых нами
-                            товаров.</p>
-                    </li>
-                    <li class="features__item">
-                        <h3>Натуральные продукты</h3>
-                        <p>Заботясь о здоровье наших потребителей, мы никогда не используем химических добавок.</p>
-                    </li>
-                    <li class="features__item">
-                        <h3>Гибкие продажи</h3>
-                        <p>У нас можно приобрести кондитерские изделия оптом - мелким и крупным.</p>
-                    </li>
-                    <li class="features__item">
-                        <h3>Лучшие кондитеры</h3>
-                        <p>Для осуществления ваших пожеланий мы привлекаем самых искусных мастеров.</p>
-                    </li>
-                </ul>                             
-            </div> 
+            </div>
         </section>
         <section class="delivery section-padding container">
+            <span id="delivery" class="section-anchor"></span> 
             <h2 class="delivery__title section-title">Доставка</h2>  
             <div class="delivery__content">
                 <section class="delivery-district">
@@ -180,8 +196,7 @@
                     </p> 
                     <p class="delivery__text">
                         <b>Адрес: г. Арзамас, пр-т Ленина, д. 154 корп. 2</b>                        
-                    </p>                   
-                    
+                    </p> 
                 </section>
                 <section class="delivery-city">
                     <h3 class="visually-hidden">Доставка по городу</h3>
@@ -203,35 +218,42 @@
                         осуществляем только до подъезда или входа в помещение.
                     </p>
                 </section>
-
-            </div>
-            
+            </div>            
             <button class="delivery__button">Заказать</button>
         </section>
-        <section class="contacts">
-            <h2 class="contacts__title">Контакты</h2>
-            <ul class="contacts__list">
-                <li class="contacts__item">
-                    <p><address>г. Арзамас, пр-т Ленина, д. 154 корп. 2 </address></p>
-                </li>
-                <li class="contacts__item">
-                    <a class="contats__link" href="mailto:info@zefir-cloud.ru">info@zefir-cloud.ru</a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contats__link" href="tel:">+7 986 747 99</a>
-                </li>
-                <li class="contacts__item">
-                    <p><time>10:00 - 20:00</time> (понедельник - суббота)</p>
-                </li>
-            </ul>
-            <form class="contacts-form" action="">
-                <label class="visually-hidden" for="name">Имя:</label>
-                <input class="contacts-form__input" type="text" name="name" id="name" placeholder="Введите Имя" required>
-                <label for="">E-mail:</label>
-                <input class="contacts-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
-                <textarea name="comment" id="" cols="30" rows="10">Задать вопрос</textarea>
-                <button class="contacts-form__button"type="submit">Отправить</button>
-            </form>
+        <section class="contacts section-padding">
+            <span id="contacts" class="section-anchor"></span> 
+            <div class="container">
+                <h2 class="contacts__title section-title">Контакты</h2>            
+                <div class="contacts__content">                
+                    <ul class="contacts__list">
+                        <li class="contacts__item"> 
+                                г. Арзамас, пр-т Ленина, д. 154 корп. 2
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="mailto:info@zefir-cloud.ru">info@zefir-cloud.ru</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="tel:">+7 986 747 99 08</a>
+                        </li>
+                        <li class="contacts__item">
+                            <time>10:00 - 20:00</time><br>(понедельник - суббота)
+                        </li>
+                    </ul>
+                    <form class="contacts-form" action="">
+                        <div class="input-wrapper">
+                            <label class="visually-hidden" for="name">Имя:</label>
+                            <input class="contacts-form__input" type="text" name="name" id="name"
+                                placeholder="Введите Имя" required>
+                            <label class="visually-hidden" for="email">E-mail:</label>
+                            <input class="contacts-form__input" type="text" name="email" id="email"
+                                placeholder="Введите e-mail" required>
+                        </div>                        
+                        <textarea class="contacts-form__textarea" name="comment" id="" cols="30" rows="5">Задать вопрос</textarea>
+                        <button class="contacts-form__button" type="submit">Отправить</button>
+                    </form>
+                </div>            
+            </div>           
         </section>
         <section class="reviews">
             <h2 class="reviews__title">Отзывы покупателей</h2>
