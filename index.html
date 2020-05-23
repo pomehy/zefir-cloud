@@ -16,9 +16,9 @@
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="">Продукция</a>
                 </li>
-                <li class="main-nav__item">
+                <!-- <li class="main-nav__item">
                     <a class="main-nav__link" href="">Кондитер</a>
-                </li>
+                </li> -->
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="">Цены</a>
                 </li>
@@ -40,7 +40,7 @@
     </header>
     <main class="page-main">
         <h1 class="visually-hidden">Zefir Cloud - Зефир и сладости ручной работы</h1>
-        <section class="intro">
+        <section class="intro section-padding">
             <div class="intro__content  container">
                 <h2 class="intro__title">Zefir Cloud</h2>
                 <p class="intro__subtitle">Самые популярные и вкусные десерты от нашей кондитерской к любому торжеству!<br>
@@ -49,88 +49,112 @@
                 <button class="intro__button">Заказать</button>
             </div>            
         </section>
-        <section class="product container">
+        <section class="product container section-padding">
             <h2 class="product__title section-title">Наша продукция</h2>
             <ul class="product__list">
                 <li class="product__item">
-                    <img class="poduct__image" src="" alt="">
-                    <h3 class="product__name">Макарунс</h3>
-                    <p class="product__text">В нашей кондитерской можно купить наборы макарун с различными вкусовыми
+                    <div class="product-image-wrapper">
+                        <img class="product__image" src="img/content-img/product/zefir.jpg" alt="Зефир ручной работы" width="310" height="250">
+                    </div>                    
+                    <h3 class="product__name">Зефир</h3>
+                    <p class="product__text">В нашей кондитерской можно купить наборы зефира с разными вкусовыми
                         сочетаниями, красиво оформленные и упакованные. Можно приобрести, как небольшие коробочки для
                         презентаций, так и полноценные подарочные наборы.</p>
                 </li>
                 <li class="product__item">
-                    <img class="poduct__image" src="" alt="">
-                    <h3 class="product__name">Профитроли</h3>
-                    <p class="product__text">Нежные и благородные профитоли, приготовленные нашими кондитерами - это
-                        лакомство для настоящих гурманов. Восхитительное заварное тесто в сочетании с нежнейшим кремом
+                    <div class="product-image-wrapper">
+                        <img class="product__image" src="img/content-img/product/birdmilk.jpg" alt="Конфеты птичье молоко" width="310" height="250">
+                    </div>
+                    <h3 class="product__name">Птичье молоко</h3>
+                    <p class="product__text">Нежные и благородные конфеты, приготовленные нашими кондитерами - это
+                        лакомство для настоящих гурманов. Восхитительный шоколад в сочетании с нежнейшим суфле
                         породили всеобщую любовь к этому десерту.</p>
                 </li>
                 <li class="product__item">
-                    <img class="poduct__image" src="" alt="">
+                    <div class="product-image-wrapper">
+                        <img class="product__image" src="img/content-img/product/cupcake.jpg" alt="Капкейки" width="310" height="250">
+                    </div>
                     <h3 class="product__name">Капкейки</h3>
                     <p class="product__text">Капкейки порционные пирожные с нежной текстурой и восхитительным вкусом.
                         Каждое маленькое пирожное по красоте ни в чем не уступает торту, и его по праву можно считать
                         настоящим сладким шедевром.</p>
                 </li>
             </ul>
-            <ul class="slider__control">
+            <!-- <ul class="slider__control">
                 <li class="slider__button"></li>
                 <li class="slider__button"></li>
                 <li class="slider__button"></li>
-            </ul>
+            </ul> -->
         </section>
-        <section class="master">
-            <div class="master__description">
-                <h2 class="master__title">Кондитер</h2>
-                <p class="master__text">
-                    Привет, меня зовут Даша и я зефирная фея !
-                    Немного о себя, я такая вот такая, умею делать крутые и вкусные штуки. Очень люблю этим заниматься, прям кайфую !
-                    Вообщем, я рождена для этого, а вы рождены , что бы вкусить мои прелестные сладости :)
-                </p>                    
-            </div> 
-            <img class="master__photo" src="" alt="">   
+        <section class="master section-padding">
+            <div class="master__content container">
+                <div class="master__description">
+                    <h2 class="master__title section-title">Кондитер</h2>
+                    <p class="master__text">
+                        Привет, меня зовут Даша и я зефирная фея !                        
+                    </p>  
+                    <p class="master__text">Немного о себя, я такая вот такая, умею делать крутые и вкусные штуки. Очень люблю этим заниматься, прям кайфую ! А ещё я могу такое делать, вы просто будете в восторге, именно поэтому у меня так много заказов, я умею удивлять !
+                        
+                    </p>    
+                    <p class="master__text">
+                        Вообщем, я рождена для этого, а вы рождены , что бы вкусить мои прелестные сладости :)
+                    </p>                
+                </div> 
+                <div class="master-photo-wrapper">
+                    <img class="master__photo" src="img/content-img/master/master__photo.jpg" alt="" width="300">  
+                </div>                
+            </div>             
         </section>
         <section class="price">
-            <h2 class="price__title">Цены</h2>
-
+            <h2 class="price__title section-title">Цены</h2>
         </section>
         <section class="features">
-            <div class="features__description">
-                <h2 class="features__title">Преимушества</h2>
-                <p class="features__text">
-                    Производство кондитерских изделий - это удивительно интересный и творческйи процесс. Да, несомненно, творческий, ведь мы изготавливаем изделия, которым суждено нести удовольствие людям. Это и было положено в основу самой идеи создания кондитерской, этим мы руководствуемся в своей политике.
-                </p>
-            </div>
-            <ul class="features__list">
-                <li class="features__item">
-                    <h3>Высокое качество</h3>
-                    <p>При производстве наших десертов исользуются только качественные ингредиенты.</p>
-                </li>
-                <li class="features__item">
-                    <h3>Доступные цены</h3>
-                    <p>Мы придерживаемся политики оптимального соотношения качества с доступной ценой.</p>
-                </li>
-                <li class="features__item">
-                    <h3>Забота о покупателе</h3>
-                    <p>Для нас очень важно, чтобы конечный потребитель получил удовольствие от предлагаемых нами товаров.</p>
-                </li>
-                <li class="features__item">
-                    <h3>Натуральные продукты</h3>
-                    <p>Заботясь о здоровье наших потребителей, мы никогда не используем химических добавок.</p>
-                </li>
-                <li class="features__item">
-                    <h3>Гибкие продажи</h3>
-                    <p>У нас можно приобрести кондитерские изделия оптом - мелким и крупным.</p>
-                </li>
-                <li class="features__item">
-                    <h3>Лучшие кондитеры</h3>
-                    <p>Для осуществления ваших пожеланий мы привлекаем самых искусных мастеров.</p>
-                </li>
-            </ul>
+            <div class="features__content container">
+                <div class="features__description">
+                    <h2 class="features__title section-title">Преимушества</h2>
+                    <p class="features__text">
+                        Производство кондитерских изделий - это удивительно интересный и творческйи процесс.                      
+                    </p>
+                    <p class="features__text">                        
+                        Да, несомненно, творческий, ведь мы изготавливаем изделия, которым суждено нести удовольствие людям. 
+                    </p>
+                     
+                    <p class="features__text">                        
+                        Это и было положено в основу самой идеи создания кондитерской, этим мы руководствуемся в своей
+                        политике.
+                    </p>
+                </div>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <h3>Высокое качество</h3>
+                        <p>При производстве наших десертов исользуются только качественные ингредиенты.</p>
+                    </li>
+                    <li class="features__item">
+                        <h3>Доступные цены</h3>
+                        <p>Мы придерживаемся политики оптимального соотношения качества с доступной ценой.</p>
+                    </li>
+                    <li class="features__item">
+                        <h3>Забота о покупателе</h3>
+                        <p>Для нас очень важно, чтобы конечный потребитель получил удовольствие от предлагаемых нами
+                            товаров.</p>
+                    </li>
+                    <li class="features__item">
+                        <h3>Натуральные продукты</h3>
+                        <p>Заботясь о здоровье наших потребителей, мы никогда не используем химических добавок.</p>
+                    </li>
+                    <li class="features__item">
+                        <h3>Гибкие продажи</h3>
+                        <p>У нас можно приобрести кондитерские изделия оптом - мелким и крупным.</p>
+                    </li>
+                    <li class="features__item">
+                        <h3>Лучшие кондитеры</h3>
+                        <p>Для осуществления ваших пожеланий мы привлекаем самых искусных мастеров.</p>
+                    </li>
+                </ul>                             
+            </div> 
         </section>
-        <section class="delivery">
-            <h2 class="delivery__title">Доставка</h2>
+        <section class="delivery section-padding container">
+            <h2 class="delivery__title section-title">Доставка</h2>            
             <section class="delivery-district">
                 <h3 class="visually-hidden">Доставка по району</h3>
                 <p class="delivery__desc">Минимальная сумма заказа для доставки по району (до 10 км) составляет 1000 рублей.</p>
