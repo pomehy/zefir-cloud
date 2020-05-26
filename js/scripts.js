@@ -1,13 +1,13 @@
-$(document).ready(function () {
-	$('.main-nav__link, .logo[href^="#"], *[data-href^="#"]').on('click', function (e) {
-		e.preventDefault();
-		var t = 1000;
-		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-		$('html,body').stop().animate({
-			scrollTop: $(d).offset().top
-		}, t);
-	});
-});
+// $(document).ready(function () {
+// 	$('.main-nav__link, .logo[href^="#"], *[data-href^="#"]').on('click', function (e) {
+// 		e.preventDefault();
+// 		var t = 1000;
+// 		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+// 		$('html,body').stop().animate({
+// 			scrollTop: $(d).offset().top
+// 		}, t);
+// 	});
+// });
 
 $(".price__item").not(":first").hide();
 $(".offer .offer__item").click(function() {
