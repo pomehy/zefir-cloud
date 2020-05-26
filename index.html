@@ -6,6 +6,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function () {
+            $('.flexslider').flexslider();
+        });
+    </script>
     <link rel="stylesheet" href="css/main.css">
     <title>Zefir-cloud</title>
 </head>
@@ -44,7 +52,10 @@
         <section class="intro section-padding">
             <div class="intro__content  container">
                 <h2 class="intro__title">Zefir Cloud</h2>
-                <p class="intro__subtitle">Самые популярные и вкусные десерты от нашей кондитерской к любому торжеству!<br>
+                <p class="intro__subtitle">
+                    Самые популярные и вкусные десерты к любому торжеству!                   
+                </p>
+                <p class="intro__subtitle">
                     Готовим и доставляем по персональному заказу
                 </p>
                 <button class="intro__button">Заказать</button>
@@ -105,16 +116,366 @@
                             Вообщем, я рождена для этого, а вы рождены , что бы вкусить мои прелестные сладости :)
                         </p>
                     </div>
-                    <div class="master-photo-wrapper">
-                        <img class="master__photo" src="img/content-img/master/master__photo.jpg" alt="" width="350">
+                    <div class="master-photo-wrapper">      
+                        <div class="flex-container">
+                            <div class="flexslider master__slider">
+                                <ul class="slides">
+                                    <li>                                       
+                                        <a> <img class="master__photo" src="img/content-img/master/master__photo-2.jpg" width="350"></a>
+                                    </li>                                     
+                                    <li>    
+                                        <video class="master__video"
+                                            controls
+                                            preload="metadata"
+                                            width="350"
+                                            poster="/video/master-poster.jpg">                                            
+                                            <source src="video/master_video.mp4" type="video/mp4">
+                                        </video>                                    
+                                                                               
+                                    </li>                                     
+                                    <li>
+                                        <img class="master__photo" src="img/content-img/master/master__photo-3.jpg" width="350">                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                  
+                        <!-- <img class="master__photo" src="img/content-img/master/master__photo-2.jpg" alt="" width="350"> -->
                     </div>
                 </div>
             </div>
-
         </section>
-        <section class="price">
-            <span id="price" class="section-anchor"></span> 
-            <h2 class="price__title section-title">Цены</h2>
+        <section class="price section-padding">
+            <span id="price" class="section-anchor"></span>
+            <div class="container">              
+                <h2 class="price__title section-title">Цены</h2>                  
+                <div class="offer">
+                    <ul class="offer__list">
+                        <li class="offer__item">
+                            <img class="offer__image" src="img/content-img/price/zefir-price.jpg" alt="" width="235" height="177">
+                            <h3 class="offer__name">Зефир</h3>
+                        </li>
+                        <li class="offer__item">
+                            <img class="offer__image" src="/img/content-img/product/birdmilk.jpg" alt="" width="235" height="177">
+                            <h3 class="offer__name">Конфеты</h3>
+                        </li>
+                        <li class="offer__item">
+                            <img class="offer__image" src="img/content-img/price/mac-price.jpg" alt="" width="235" height="177">
+                            <h3 class="offer__name">Макарунс</h3>
+                        </li>
+                        <li class="offer__item">
+                            <img class="offer__image" src="/img/content-img/product/cupcake.jpg" alt="" width="235" height="177">
+                            <h3 class="offer__name">Капкейки</h3>
+                        </li>
+                    </ul>
+                    <ul class="price__list">
+                        <li class="price__item">
+                            <ul>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>   
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>                              
+                            </ul>
+                        </li>
+                        <li class="price__item">
+                            <ul>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="price__item">
+                            <ul>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="price__item">
+                            <ul>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="price__table">
+                                        <tr>
+                                            <th>Зефир</th>
+                                            <th>25 руб.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Классический вкус. Натуральные ингредиенты.</td>
+                                            <td>115 гр.</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <button class="price__button">Заказать</button> -->
+                </div>
+            </div>            
         </section>
         <section class="features">
             <span id="features" class="section-anchor"></span> 
@@ -166,6 +527,9 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="features-image-wrapper">
+                <img class="features__image" src="/img/content-img/features/img-bg-2.jpg" alt="">                
             </div>
         </section>
         <section class="delivery section-padding container">
@@ -255,111 +619,130 @@
                 </div>            
             </div>           
         </section>
-        <section class="reviews">
-            <h2 class="reviews__title">Отзывы покупателей</h2>
-            <div class="reviews__slider slider">
-                <ul class="reviews__list">
-                    <li class="reviews__item autor">
-                        <img class="autor__photo" src="" alt="">
-                        <blockquote class="autor__content">
-                            <cite class="autor__name">Сергей Иванов</cite>
-                            <p class="autor__comment">Делали заказ на небольшой праздник, в офис. Все остались очень довольны. Работа персонала очень слаженная, с оплатой и доставкой не было никаких проблем!</p>
-                        </blockquote>
-                    </li>
-                    <li class="reviews__item autor">
-                        <img class="autor__photo" src="" alt="">
-                        <blockquote class="autor__content">
-                            <cite class="autor__name">Дмтрий Седов</cite>
-                            <p class="autor__comment">Спасибо огромное за такие потрясающие капкейки! Делали заказ второй раз, все на высшем уровне! Очень красиво, внешний вид, упаковка и самое главное - вкусно!</p>
-                        </blockquote>
-                    </li>
-                    <li class="reviews__item autor">
-                        <img class="autor__photo" src="" alt="">
-                        <blockquote class="autor__content">
-                            <cite class="autor__name">Елена Смирнова</cite>
-                            <p class="autor__comment">Заказывала Зефир "С днем рождения". Все очень понравилось, муж был в восторге, а дети на седьмом небе от счастья. Очень красиво оформлено, красочно и вкусно ! Спасибо Даше !</p>
-                        </blockquote>
-                    </li>
-                </ul>
+        <section class="reviews section-padding">
+            <span id="reviews" class="section-anchor"></span>
+            <div class="container">
+                <h2 class="reviews__title section-title">Отзывы покупателей</h2>
+                <div class="reviews__slider slider">
+                    <ul class="reviews__list">
+                        <li class="reviews__item autor">
+                            <img class="autor__photo" src="img/content-img/reviews/photo-1.jpg" alt="" width="250px">
+                            <blockquote class="autor__content">
+                                <cite class="autor__name">Катя Иванова</cite>
+                                <p class="autor__comment">Делали заказ на небольшой праздник, в офис. Все остались очень
+                                    довольны. Работа персонала очень слаженная, с оплатой и доставкой не было никаких
+                                    проблем!</p>
+                            </blockquote>
+                        </li>
+                        <li class="reviews__item autor">
+                            <img class="autor__photo" src="img/content-img/reviews/photo-2.jpg" alt="" width="250px">
+                            <blockquote class="autor__content">
+                                <cite class="autor__name">Алина Седова</cite>
+                                <p class="autor__comment">Спасибо огромное за такие потрясающие вкусняхи! Вы посмотрите в мои глаза, я просто счастлива ! Делали заказ второй раз, все на высшем уровне! Очень красиво, внешний вид, упаковка и самое
+                                    главное - вкусно!</p>
+                            </blockquote>
+                        </li>
+                        <li class="reviews__item autor">
+                            <img class="autor__photo" src="img/content-img/reviews/photo-3.jpg" alt="" width="250px">
+                            <blockquote class="autor__content">
+                                <cite class="autor__name">Елена Смирнова</cite>
+                                <p class="autor__comment">Заказывала Зефир "С днем рождения". Все очень понравилось, муж
+                                    был в восторге, а дети на седьмом небе от счастья. Очень красиво оформлено, красочно
+                                    и вкусно ! Спасибо Даше !</p>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            
         </section>
     </main>
     <footer class="page-footer"> 
-        <a class="logo" href="">Zefir Cloud</a>
-        <ul class="contacts__list">
-            <li class="contacts__item">
-                <p><address>г. Арзамас, пр-т Ленина, д. 154 корп. 2 </address></p>
-            </li>
-            <li class="contacts__item">
-                <a class="contats__link" href="mailto:info@zefir-cloud.ru">info@zefir-cloud.ru</a>
-            </li>
-            <li class="contacts__item">
-                <a class="contats__link" href="tel:">+7 986 747 99</a>
-            </li>
-            <li class="contacts__item">
-                <p><time>10:00 - 20:00</time> (понедельник - суббота)</p>
-            </li>
-        </ul>
-        <div class="footer-nav">
-            <h3 class="footer-nav__title">О компании</h3>
-            <ul class="footer-nav__list">
-                <li class="footer-nav__item">
-                    <a href="#">Продукция</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Кондитер</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Цены</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Преимущества</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Доставка</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Отзывы</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </div>
-        <ul class="footer-product__list">
-            <li class="footer-product__item">
-                Капкейки
-            </li>
-            <li class="footer-product__item">
-                Макарунс
-            </li>
-            <li class="footer-product__item">
-                Профитроли
-            </li>
-            <li class="footer-product__item">
-                Зефир
-            </li>
-            <li class="footer-product__item">
-                Маршемлоу
-            </li>
-        </ul>
-        <ul class="social">
-            <li class="social__item">
-                <a class="social__link" href="">
-                    <img class="social__icon" src="" alt="">
-                </a>
-            </li>
-            <li class="social__item">
-                <a class="social__link" href="">
-                    <img class="social__icon" src="" alt="">
-                </a>
-            </li>
-            <li class="social__item">
-                <a class="social__link" href="">
-                    <img class="social__icon" src="" alt="">
-                </a>
-            </li>
-        </ul>        
-    </footer>    
+        <div class="container">
+            <div class="page-footer__content">
+                <div class="footer-logo-wrapper">
+                    <a class="logo" href="">Zefir Cloud</a>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            г. Арзамас, пр-т Ленина, д. 154 корп. 2
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="mailto:info@zefir-cloud.ru">info@zefir-cloud.ru</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="tel:">+7 986 747 99 08</a>
+                        </li>
+                        <li class="contacts__item">
+                            <time>10:00 - 20:00</time><br>(понедельник - суббота)
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h3 class="footer__title">О компании</h3>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Продукция</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Кондитер</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Цены</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Преимущества</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Доставка</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-product-wrapper">
+                    <h3 class="footer__title">Наша продукция</h3>
+                    <ul class="footer-product__list">
+                        <li class="footer-product__item">
+                            Капкейки
+                        </li>
+                        <li class="footer-product__item">
+                            Макарунс
+                        </li>
+                        <li class="footer-product__item">
+                            Профитроли
+                        </li>
+                        <li class="footer-product__item">
+                            Зефир
+                        </li>
+                        <li class="footer-product__item">
+                            Маршемлоу
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <img class="social__icon" src="img/content-img/footer/vk-icon.png" alt="" width="32">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <img class="social__icon" src="img/content-img/footer/inst-icon.png" alt=""  width="28">
+                            </a>
+                        </li>
+                        <!-- <li class="social__item">
+                            <a class="social__link" href="">
+                                <img class="social__icon" src="" alt="">
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>            
+        </div>        
+    </footer>   
+    <script src="/js/scripts.js"></script>  
 </body>
 </html>
