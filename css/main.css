@@ -233,6 +233,10 @@ body {
     cursor: pointer;
 }
 
+.product {
+    height: 100vh;
+}
+
 .product__list {
     display: flex;
     justify-content: space-around;
