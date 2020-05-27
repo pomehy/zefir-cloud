@@ -865,52 +865,64 @@ body {
     line-height: 130%;
 }
 .page-footer {
+    display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #7F8488;
 }
 
 .page-footer .logo {
+    display: inline-block;
     color: #ffffff;
+    margin-bottom: 25px;
 }
 
-.page-footer .contacts__list {
-    margin-top: 35px;
-    padding-left: 40px;
-
-    color: #ffffff;    
-}
-.page-footer .contacts__item {
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-}
 .page-footer__content {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-left: -15px;
-    margin-right: -15px;    
+    align-items: baseline;     
 }
 
 .footer-logo-wrapper {
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
+}
+.footer-logo-wrapper p {
+    margin: 0;
+    color: #ffffff;
+}
+.footer-contacts__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-contacts__item {
+    padding: 4px;
+    color: #ffffff;
+}
+.footer-contacts__link {
+    text-decoration: none;
+    color: #ffffff;
 }
 .footer__title {
     color: #ffffff;
+    margin-bottom: 25px;
 }
 .footer-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 31%;    
+    flex-basis: 32%;   
+    box-sizing: border-box; 
 }
 .footer-nav__list {    
     padding: 0;
     margin-top: 0;
     list-style: none;
 }
+
 
 .footer-nav__link {
     display: inline-block;
@@ -919,11 +931,12 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
-.footer-product-wrapper { 
+.footer-contacts-wrapper { 
     display: flex;
     flex-direction: column;    
-    flex-basis: 31%;
+    flex-basis: 32%;
     text-align: right;
+    box-sizing: border-box;
 }
 .footer-product__list {
     padding: 0;
@@ -1113,7 +1126,32 @@ body {
         padding-right: 20px;
         padding-left: 20px;
     }
-
+    .page-footer__content {
+        flex-wrap: wrap;
+    }
+    .footer-logo-wrapper {
+        flex-basis: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footer-product__list {
+        display: none;
+    }
+    .footer-nav {
+        display: none;
+    }
+    .footer-contacts-wrapper {
+        flex-basis: 100%;
+        text-align: center;
+    } 
+    .footer-contacts__item {
+        padding: 4px 10px 10px 10px;
+    }
+    .social {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
 }
 
 /* Extra Small Devices, Phones */
