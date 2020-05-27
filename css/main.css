@@ -1055,12 +1055,14 @@ body {
             flex-basis: 100%;
         }
         .delivery-district {
+            padding: 0;
             flex-basis: 100%;
             max-width: 100%;            
         }
         .delivery-city {      
             position: relative;      
             margin-top: 35px;
+            padding: 0;
             flex-basis: 100%;
             max-width: 100%;
         }
@@ -1110,7 +1112,7 @@ body {
         display: none;
     }
     .price__list {        
-        box-shadow: inset 0 2px 3px 0px rgba(1, 3, 4, 0.3);  
+        box-shadow: inset 0 0 3px 1px rgba(1, 3, 4, 0.3);  
     }
     .price__item ul li{        
         flex-basis: 100%;
