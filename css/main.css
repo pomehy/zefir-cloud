@@ -609,15 +609,14 @@ body {
 }
 
 .delivery {
+    display: flex;    
     height: 100vh;
 }
 
 .delivery__content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    flex-wrap: wrap;  
     
 }
 .delivery-district {
@@ -692,6 +691,7 @@ body {
 }
 
 .contacts {
+    display: flex;
     background-color: #95BBCE;
 }
 
@@ -702,16 +702,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    flex-wrap: wrap;    
 }
 .contacts__list {
-    flex-basis: 31%;
+    flex-basis: 32%;
     margin: 0;
     padding-right: 15px;
     padding-left: 65px;
     list-style: none;
+
+    box-sizing: border-box;
 }
 .contacts__item {
     position: relative;
@@ -758,6 +758,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 25px;
+    
+    box-sizing: border-box;
 }
 .contacts-form__input {
     flex-basis: 48%;
@@ -767,6 +769,8 @@ body {
     font-size: 16px;
 
     border: none;
+
+    box-sizing: border-box;
 }
 .contacts-form__textarea {
     display: block;
@@ -778,6 +782,8 @@ body {
     color: #818181;
 
     border: none;
+
+    box-sizing: border-box;
 }
 
 .contacts-form__button {
@@ -999,6 +1005,9 @@ body {
         .master__video {
             max-width: 100%;            
         }
+        .delivery {
+            height: auto;
+        }
         
 }
 
@@ -1039,8 +1048,16 @@ body {
             width: 40px;
             height: 3px;
             content: '';
-            background-color: #c14679;
-            
+            background-color: #c14679;            
+        }
+        .contacts__list {
+            flex-basis: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .contacts-form {
+            flex-basis: 100%;
+            max-width: 100%;
         }
         
 }
@@ -1095,6 +1112,15 @@ body {
         flex-basis: 100%;
         max-width: 100%;        
     }
+    .input-wrapper {
+        margin-bottom: 0;
+    }
+    .contacts-form__input { 
+        margin-bottom: 15px;       
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    
     
 }
 
