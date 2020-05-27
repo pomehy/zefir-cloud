@@ -117,6 +117,7 @@ body {
     font-size: 35px;
     font-weight: bold;
     font-family: 'Sofia', cursive;
+    white-space: nowrap;
     letter-spacing: 1px;
     text-decoration: none;
     color: #c14679;
@@ -132,7 +133,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0;
 
     list-style: none;    
@@ -167,6 +171,7 @@ body {
 .main-nav__phone {
     font-size: 18px;
     font-weight: 700;
+    white-space: nowrap;
     text-decoration: none;
     color: #c14679;
 }
@@ -184,11 +189,9 @@ body {
 }
 
 .intro__content {       
-    width: 60%;
-    padding: 60px 0;    
-    text-align: center;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-   
+    width: 100%;
+    padding: 60px 15px;    
+    text-align: center; 
     
 }
 
@@ -199,6 +202,7 @@ body {
     font-weight: bold;
     font-family: 'Sofia', cursive;
     letter-spacing: 1px;
+    line-height: 130%;
     color: #c14679;
 }
 
@@ -919,7 +923,12 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-        
+        .intro {
+            height: auto;
+        }
+        .intro__title {
+            font-size: 50px;
+        }
 }
 
 @media only screen and (max-width : 767px) {
