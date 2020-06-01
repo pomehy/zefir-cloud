@@ -9,8 +9,17 @@
 // 	});
 // });
 
+
+
 $(".price__item").not(":first").hide();
 $(".offer .offer__item").click(function() {
 	$(".offer .offer__item").removeClass("active").eq($(this).index()).addClass("active");
 	$(".price__item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
+
+let page = document.querySelector('.page');
+let themeButton = document.querySelector('.theme-button');
+
+themeButton.onclick = function() {
+	page.classList.toggle('dark-theme');
+};
