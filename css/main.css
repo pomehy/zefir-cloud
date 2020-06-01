@@ -1257,6 +1257,15 @@ body {
         .delivery {
             height: auto;
         }
+        .features {
+            height: auto;
+        }
+        .price {
+            height: auto;
+        }
+        .reviews {
+            height: auto;
+        }
         
 }
 
